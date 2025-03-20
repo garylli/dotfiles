@@ -1,4 +1,4 @@
-#files: 968	version: 5.9
+#files: 966	version: 5.9
 
 _comps=(
 '-' '_precommand'
@@ -93,7 +93,6 @@ _comps=(
 'Mosaic' '_webbrowser'
 'SuSEconfig' '_SUSEconfig'
 '_arguments' '__arguments'
-'_git_log_prettily' '_git'
 'a2dismod' '_a2utils'
 'a2dissite' '_a2utils'
 'a2enmod' '_a2utils'
@@ -292,7 +291,6 @@ _comps=(
 'composite' '_imagemagick'
 'compress' '_compress'
 'conch' '_twisted'
-'conda' '_conda'
 'config.status' '_configure'
 'configure' '_configure'
 'convert' '_imagemagick'
@@ -331,7 +329,6 @@ _comps=(
 'cygserver.exe' '_cygserver'
 'cygstart' '_cygstart'
 'cygstart.exe' '_cygstart'
-'d' '_dirs'
 'dak' '_dak'
 'darcs' '_darcs'
 'dash' '_sh'
@@ -536,7 +533,6 @@ _comps=(
 'gbasename' '_basename'
 'gcat' '_cat'
 'gcc' '_gcc'
-'gccd' '_git'
 'gccgo' '_go'
 'gchgrp' '_chown'
 'gchmod' '_chmod'
@@ -553,9 +549,7 @@ _comps=(
 'gdd' '_dd'
 'gdf' '_df'
 'gdiff' '_diff'
-'gdnolock' '_git'
 'gdu' '_du'
-'gdv' '_git'
 'geany' '_geany'
 'gegrep' '_grep'
 'gem' '_gem'
@@ -580,13 +574,7 @@ _comps=(
 'gfmt' '_fmt'
 'gfold' '_fold'
 'ggetopt' '_getopt'
-'ggf' '_git'
-'ggfl' '_git'
-'ggl' '_git'
-'ggp' '_git'
-'ggpnp' '_git'
 'ggrep' '_grep'
-'ggu' '_git'
 'ggv' '_gnome-gv'
 'ghead' '_head'
 'ghostscript' '_ghostscript'
@@ -910,7 +898,6 @@ _comps=(
 'make-kpkg' '_make-kpkg'
 'makeinfo' '_texinfo'
 'makepkg' '_pkgtool'
-'mamba' '_conda'
 'man' '_man'
 'manage.py' '_django'
 'manila' '_openstack'
@@ -949,7 +936,6 @@ _comps=(
 'mhpath' '_mh'
 'mhshow' '_mh'
 'mhstore' '_mh'
-'micromamba' '_conda'
 'mii-tool' '_mii-tool'
 'mistral' '_openstack'
 'mixerctl' '_mixerctl'
@@ -1063,7 +1049,6 @@ _comps=(
 'ogginfo' '_vorbis'
 'oksh' '_sh'
 'okular' '_okular'
-'omz' '_omz'
 'open' '_open'
 'openstack' '_openstack'
 'opera' '_webbrowser'
@@ -1754,20 +1739,10 @@ _services=(
 '-redirect-,>,gzip' 'gunzip'
 '-redirect-,>,xz' 'unxz'
 'Mail' 'mail'
-'_git_log_prettily' 'git-log'
 'bzcat' 'bunzip2'
 'dch' 'debchange'
-'gccd' 'git-clone'
 'gchgrp' 'chgrp'
 'gchown' 'chown'
-'gdnolock' 'git-diff'
-'gdv' 'git-diff'
-'ggf' 'git-checkout'
-'ggfl' 'git-checkout'
-'ggl' 'git-checkout'
-'ggp' 'git-checkout'
-'ggpnp' 'git-checkout'
-'ggu' 'git-checkout'
 'gnupod_INIT.pl' 'gnupod_INIT'
 'gnupod_addsong.pl' 'gnupod_addsong'
 'gnupod_check.pl' 'gnupod_check'
@@ -2055,12 +2030,11 @@ autoload -Uz _SUSEconfig __arguments _a2ps _a2utils _aap \
             _zed _zfs _zfs_dataset _zfs_pool _zftp \
             _zip _zle _zlogin _zmodload _zmv \
             _zoneadm _zones _zparseopts _zpty _zsh \
-            _zsh-mime-handler _zsocket _zstyle _ztodo _zypper \
-            _conda _conda
+            _zsh-mime-handler _zsocket _zstyle _ztodo _zypper
 autoload -Uz +X _call_program
 
 typeset -gUa _comp_assocs
 _comp_assocs=( '' )
 
-#omz revision: 85d60d489c54150cc9df5cef0504f6af90638fbd
-#omz fpath: /Users/garyli/.oh-my-zsh/plugins/git /Users/garyli/.oh-my-zsh/functions /Users/garyli/.oh-my-zsh/completions /Users/garyli/.config/zsh/ohmyzsh/custom/functions /Users/garyli/.config/zsh/ohmyzsh/custom/completions /Users/garyli/.oh-my-zsh/plugins/git /Users/garyli/.oh-my-zsh/functions /Users/garyli/.oh-my-zsh/completions /Users/garyli/.config/zsh/ohmyzsh/custom/functions /Users/garyli/.config/zsh/ohmyzsh/custom/completions /Users/garyli/.config/zsh/ohmyzsh/plugins/git /Users/garyli/.config/zsh/ohmyzsh/functions /Users/garyli/.config/zsh/ohmyzsh/completions /Users/garyli/.config/zsh/ohmyzsh/custom/functions /Users/garyli/.config/zsh/ohmyzsh/custom/completions /Users/garyli/.config/zsh/ohmyzsh/cache/completions /usr/local/share/zsh/site-functions /usr/share/zsh/site-functions /usr/share/zsh/5.9/functions /Users/garyli/.config/zsh/conda-zsh-completion /Users/garyli/.config/zsh/conda-zsh-completion
+#omz revision: 5eaebdf0fe870a8c599c89c6b70a0c5ee8c78b42
+#omz fpath: /Users/garyli/.config/zsh/ohmyzsh/plugins/git /Users/garyli/.config/zsh/ohmyzsh/functions /Users/garyli/.config/zsh/ohmyzsh/completions /Users/garyli/.config/zsh/ohmyzsh/custom/functions /Users/garyli/.config/zsh/ohmyzsh/custom/completions /Users/garyli/.config/zsh/ohmyzsh/cache/completions /usr/local/share/zsh/site-functions /usr/share/zsh/site-functions /usr/share/zsh/5.9/functions

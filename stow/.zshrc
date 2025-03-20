@@ -9,10 +9,10 @@ eval "$(conda shell.zsh hook)"
 
 # --------- -------------- ---------
 # Path to your Oh My Zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
+export ZSH="$HOME/.config/zsh/ohmyzsh"
 
 # conda auto-complete
-fpath+="${0:h}/.config/zsh/conda-zsh-completion"
+fpath+="$HOME/.config/zsh/conda-zsh-completion"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
